@@ -6,12 +6,24 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "db:migrate-auth": "node scripts/migrate-auth.mjs",
+    "db:seed-password": "node scripts/seed-passwords.mjs",
+    "db:migrate-extras": "node scripts/migrate-customer-extras.mjs",
+    "db:migrate-mentions": "node scripts/migrate-comment-mentions.mjs",
+    "db:seed-lookups": "node scripts/seed-lookups.mjs",
+    "db:backfill-vtiger": "node scripts/backfill-from-vtiger.mjs"
   },
   "dependencies": {
+    "@tanstack/react-table": "^9.2.4",
+    "bcryptjs": "^3.0.3",
+    "jose": "^6.2.12",
+    "mysql2": "^3.23.0",
     "next": "16.2.10",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "server-only": "^0.0.1",
+    "uuid": "^14.0.2"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
