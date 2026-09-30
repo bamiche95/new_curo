@@ -2,18 +2,18 @@ import mysql from 'mysql2/promise';
 import { v4 as uuidv4 } from 'uuid';
 
 const vtigerConfig = {
-  host: process.env.VTIGER_DB_HOST || '192.168.1.98',
-  user: process.env.VTIGER_DB_USER || 'root',
-  password: process.env.VTIGER_DB_PASSWORD || 'RmlMetalMan2026',
-  database: process.env.VTIGER_DB_NAME || 'curoupgrade',
+  host: process.env.VTIGER_DB_HOST || '',
+  user: process.env.VTIGER_DB_USER || '',
+  password: process.env.VTIGER_DB_PASSWORD || '',
+  database: process.env.VTIGER_DB_NAME || '',
   port: 3307,
 };
 
 const newDbConfig = {
-  host: process.env.NEW_DB_HOST || '192.168.1.98',
-  user: process.env.NEW_DB_USER || 'root',
-  password: process.env.NEW_DB_PASSWORD || 'RmlMetalMan2026',
-  database: process.env.NEW_DB_NAME || 'curo_next_db',
+  host: process.env.NEW_DB_HOST || '',
+  user: process.env.NEW_DB_USER || '',
+  password: process.env.NEW_DB_PASSWORD || '',
+  database: process.env.NEW_DB_NAME || '',
   port: 3307,
 };
 
